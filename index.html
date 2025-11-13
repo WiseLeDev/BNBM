@@ -28,12 +28,15 @@
     </div>
 
     <nav class="nav" aria-label="Navigation principale">
-      <a href="#home">Accueil</a>
-      <a href="#services">Services</a>
-      <a href="#galerie">Galerie</a>
-      <a href="#rdv">Rendez-vous</a>
-      <a href="#contact">Contact</a>
-      <button id="themeToggle" class="theme-toggle" aria-label="Basculer thème">☾</button>
+      <button id="menuToggle" class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
+      <div class="nav-links">
+        <a href="#home">Accueil</a>
+        <a href="#services">Services</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#rdv">Rendez-vous</a>
+        <a href="#contact">Contact</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Basculer thème">☾</button>
+      </div>
     </nav>
   </header>
 
@@ -83,19 +86,39 @@
   <section id="services" class="services fade-in">
     <h3 class="section-title">Nos services</h3>
     <div class="services-grid">
-      <div class="svc card">
-        <h4>Pose complète</h4>
-        <p class="price">50€</p>
+      <div class="svc card new">
+        <h4>Pose sur ongles naturels</h4>
+        <p class="price">35€</p>
+        <p class="desc">Résine ou gel — finition brillante</p>
+      </div>
+      <div class="svc card new">
+        <h4>Pose complète capsules</h4>
+        <p class="price">40€</p>
+        <p class="desc">Résine ou gel — finition brillante</p>
+      </div>
+      <div class="svc card new">
+        <h4>Pose américaine</h4>
+        <p class="price">35€</p>
         <p class="desc">Résine ou gel — finition brillante</p>
       </div>
       <div class="svc card new">
         <h4>Remplissage</h4>
-        <p class="price">40€</p>
+        <p class="price">35€</p>
         <p class="desc">Entretien & correction</p>
       </div>
-      <div class="svc card">
-        <h4>Manucure soin</h4>
+      <div class="svc card new">
+        <h4>Pose semi permanant pieds ou mains</h4>
         <p class="price">25€</p>
+        <p class="desc">Soin des cuticules & massage</p>
+      </div>
+      <div class="svc card new">
+        <h4>Pose semi permanant pieds et mains</h4>
+        <p class="price">45€</p>
+        <p class="desc">Soin des cuticules & massage</p>
+      </div>
+      <div class="svc card new">
+        <h4>Dépose + soin de l'ongle</h4>
+        <p class="price">15€</p>
         <p class="desc">Soin des cuticules & massage</p>
       </div>
     </div>
@@ -136,9 +159,13 @@
 
       <select id="service" required>
         <option value="">Service</option>
-        <option>Pose complète</option>
+        <option>Pose sur ongles naturels</option>
+        <option>Pose complète capsules</option>
+        <option>Pose américaine</option>
         <option>Remplissage</option>
-        <option>Manucure soin</option>
+        <option>Pose semi permanant pieds ou mains</option>
+        <option>Pose semi permanant pieds et mains</option>
+        <option>Dépose + soin de l'ongle</option>
       </select>
 
       <div class="form-actions">
@@ -156,8 +183,8 @@
     <div class="contact-grid">
       <div class="contact-card card">
         <p><strong>Téléphone</strong><br>06 12 34 56 78</p>
-        <p><strong>Adresse</strong><br>12 rue de la Beauté, Paris</p>
-        <p><strong>Horaires</strong><br>Mar–Sam 09:00–18:00</p>
+        <p><strong>Adresse</strong><br>1 impasse des romains, Baldenheim</p>
+        <p><strong>Horaires</strong><br>Sous rendez-vous</p>
       </div>
       <div class="map card">
         <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=900&q=60" alt="Carte">
@@ -166,7 +193,7 @@
   </section>
 
   <footer>
-    <p>© <span id="year"></span> Ongles d’Or — Tous droits réservés</p>
+    <p>© <span id="year"></span> Beauty Nails By Mylène — Tous droits réservés</p>
   </footer>
 
   <!-- LIGHTBOX -->

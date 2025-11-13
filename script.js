@@ -134,4 +134,13 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(en=>{ if(en.isIntersecting) en.target.classList.add('visible'); });
   }, {threshold:0.12});
   document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
+
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    menuToggle.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+  });
+
 });
