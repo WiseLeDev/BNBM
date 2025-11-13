@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Beauty Nails By Mylène</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- PROGRESS BAR (liquid) -->
+  <div class="progress-container" aria-hidden="true">
+    <div class="progress-bar"><div class="liquid"></div></div>
+  </div>
+
+  <!-- THEME TOGGLE -->
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo shimmer" id="logo">Pro</div>
+      <div class="brand-text">
+        <h1>Beauty Nails By Mylène</h1>
+        <p class="tag">Prothésiste ongulaire — Baldenheim</p>
+      </div>
+    </div>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#home">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#galerie">Galerie</a>
+      <a href="#rdv">Rendez-vous</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Basculer thème">☾</button>
+    </nav>
+  </header>
+
+  <!-- SLIDER -->
+  <section id="home" class="slider">
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1581382575275-97901c2635b7?auto=format&fit=crop&w=1600&q=80')">
+      <div class="slide-overlay">
+        <h2 class="slide-title">Élégance & Raffinement</h2>
+        <p class="slide-sub">Pose, remplissage & créations sur-mesure</p>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1600&q=80')">
+      <div class="slide-overlay">
+        <h2 class="slide-title">Soin professionnel</h2>
+        <p class="slide-sub">Ambiance cosy, matériaux premium</p>
+      </div>
+    </div>
+
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1600180758890-4c9a6efc1f68?auto=format&fit=crop&w=1600&q=80')">
+      <div class="slide-overlay">
+        <h2 class="slide-title">Créations uniques</h2>
+        <p class="slide-sub">Décors finement travaillés</p>
+      </div>
+    </div>
+
+    <div class="slider-controls" aria-hidden="true">
+      <div class="dot active" data-idx="0"></div>
+      <div class="dot" data-idx="1"></div>
+      <div class="dot" data-idx="2"></div>
+    </div>
+  </section>
+
+  <!-- HERO -->
+  <section class="hero fade-in">
+    <div class="hero-inner">
+      <h2 class="section-title">Un soin, un moment — un style</h2>
+      <p class="lead">Des mains sublimes, un service professionnel et une expérience glamour.</p>
+      <div class="cta-group">
+        <a href="#rdv" class="btn primary shimmer pulse">Prendre RDV</a>
+        <a href="#galerie" class="btn ghost">Voir la galerie</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services fade-in">
+    <h3 class="section-title">Nos services</h3>
+    <div class="services-grid">
+      <div class="svc card">
+        <h4>Pose complète</h4>
+        <p class="price">50€</p>
+        <p class="desc">Résine ou gel — finition brillante</p>
+      </div>
+      <div class="svc card new">
+        <h4>Remplissage</h4>
+        <p class="price">40€</p>
+        <p class="desc">Entretien & correction</p>
+      </div>
+      <div class="svc card">
+        <h4>Manucure soin</h4>
+        <p class="price">25€</p>
+        <p class="desc">Soin des cuticules & massage</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIE -->
+  <section id="galerie" class="galerie fade-in">
+    <h3 class="section-title">Galerie</h3>
+    <div class="gallery-grid">
+      <img class="gl-img" src="https://images.unsplash.com/photo-1542317864-6e12a1bd8b6f?auto=format&fit=crop&w=900&q=80" alt="Ongles décorés 1">
+      <img class="gl-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80" alt="Ongles décorés 2">
+      <img class="gl-img" src="https://images.unsplash.com/photo-1626335670023-4f45b0c6b6a9?auto=format&fit=crop&w=900&q=80" alt="Ongles décorés 3">
+      <img class="gl-img" src="https://images.unsplash.com/photo-1600180758890-4c9a6efc1f68?auto=format&fit=crop&w=900&q=80" alt="Ongles décorés 4">
+      <img class="gl-img" src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=80" alt="Salon 1">
+      <img class="gl-img" src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=900&q=80" alt="Salon 2">
+    </div>
+  </section>
+
+  <!-- RDV -->
+  <section id="rdv" class="rdv fade-in">
+    <h3 class="section-title">Prendre rendez-vous</h3>
+    <form id="bookingForm" class="form" autocomplete="off">
+      <div class="row">
+        <input type="text" id="name" placeholder="Nom complet" required>
+        <input type="email" id="email" placeholder="Email (optionnel)">
+      </div>
+
+      <div class="row">
+        <input type="date" id="date" required>
+        <select id="time" required>
+          <option value="">Heure</option>
+          <option>09:00</option>
+          <option>10:30</option>
+          <option>14:00</option>
+          <option>15:30</option>
+        </select>
+      </div>
+
+      <select id="service" required>
+        <option value="">Service</option>
+        <option>Pose complète</option>
+        <option>Remplissage</option>
+        <option>Manucure soin</option>
+      </select>
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary shimmer">Confirmer</button>
+        <button type="button" id="exportIcs" class="btn ghost">Exporter .ics</button>
+      </div>
+    </form>
+
+    <div class="appointments" id="appointments" aria-live="polite"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact fade-in">
+    <h3 class="section-title">Contact & localisation</h3>
+    <div class="contact-grid">
+      <div class="contact-card card">
+        <p><strong>Téléphone</strong><br>06 12 34 56 78</p>
+        <p><strong>Adresse</strong><br>12 rue de la Beauté, Paris</p>
+        <p><strong>Horaires</strong><br>Mar–Sam 09:00–18:00</p>
+      </div>
+      <div class="map card">
+        <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?auto=format&fit=crop&w=900&q=60" alt="Carte">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Ongles d’Or — Tous droits réservés</p>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox hidden" role="dialog" aria-hidden="true">
+    <img src="" alt="">
+    <button id="closeLb" class="lb-close" aria-label="Fermer">✕</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
